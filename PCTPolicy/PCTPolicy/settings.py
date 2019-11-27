@@ -81,6 +81,8 @@ DATABASES = {
     }
 }
 
+MEDIA_ROOT = '/uploads'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

@@ -70,6 +70,8 @@ class Policy(models.Model):
         ('OTH', 'other'),
     ]
     category = models.CharField(max_length=3, choices=CATEGORIES)
+    pdf = models.FileField('PDF', upload_to='policypdfs/', blank=True)
+    link = models.CharField('Link to Online Copy', max_length=120,  blank=True)
 
 
     park = models.ForeignKey(Park, on_delete=models.CASCADE)
